@@ -4,43 +4,88 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--title &icon-->
 <title>Alforsan</title>
 <link rel="icon" type="image/logo/logo" href="images/logo/logo.png" />
+<!--font awesom-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--bootstrap-->
 <link rel="stylesheet" href="css/bootstrap.min.css">    
 <link rel="stylesheet" href="css/bootstrap.css">    
+<!--animate-->
+<link rel="stylesheet" href="css/animate.css">
+<!--style sheet-->
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/responsive.css">
 
 
 </head>
-<body>
+<body onMouseOver="randombg()" id="random">
+	<!--header-->
 	<div class="container-fluid top-header">
 	  <div class="row">
 		  <div class="col">
-			<ul class="header-ul  col-8">
+			<ul class="header-ul ">
+					<!--clock-->
 			  <li>
 				  <i class="far fa-clock fa-2x"></i>
-				   <div class="clock icon-content"></div>
+				   <div class="clock icon-content mb-3"></div>
 			  </li>
+				<!--temp-->
 			  <li class="temp">
 				  <i class="fas fa-sun fa-2x"></i>
-				  <p class="icon-content">15 <br>10</p>
+				  <p class="icon-content ">15 &#176; C<br>10 &#176;C</p>
 			  </li>
+				<!--login-->
 			  <li>
 				  <i class="fas fa-user-circle fa-2x"></i>
-				  <a href="#" class="icon-content">LOGIN AGENT</a>
+				  <!--login modal-->
+				  <a href="#" class="icon-content  mb-3" data-toggle="modal" data-target="#exampleModal" >LOGIN AGENT</a>
+				   <!--modal-->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">
+									<i class="fas fa-user-circle fa-2x"></i>
+						
+								</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							  </div>
+							  <div class="modal-body">
+								<form>
+								  <div class="form-group">
+									<label for="emai" class="col-form-label">Email</label>
+									<input type="email" class="form-control" id="email">
+								  </div>
+								  <div class="form-group">
+									<label for="password" class="col-form-label">password</label>
+									<input type="password" class="form-control" id="password">
+								  </div>
+								  
+								</form>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn " data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn"> Enter</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+				  <!--end of modal-->
 			  </li>
+				<!--contact us-->
 			  <li> 
-				  
 				 <p class="icon-content contact">
 					 <i class="fas fa-envelope sm-mail"></i>
-					 <a href="#"> ing@alfurasn.com </a>
+					 <a href="#" class="mr-1"> ing@alfurasn.com </a>
 					 <i class="fas fa-envelope lg-mail"></i>
 					 <br>
 					 <i class="fas fa-phone sm-phone"></i>
 					 12345333466 
-					 <i class="fas fa-phone lg-phone"></i>
+					 <i class="fas fa-phone lg-phone mr-1"></i>
 				  </p>
 				  <p class="icon-content flag1">
 					  :
@@ -50,42 +95,63 @@
 			</ul>
 		  </div>
 	  </div>
-	</div>
-	
+	</div><!--end of header-->
+	<!--start of na-->
 	<nav class="navbar navbar-expand-lg   justify-content-between fixed-top-md ">
            
-<!--logo--><a class="navbar-brand" href="#">
+        <!--logo-->
+		<a class="navbar-brand" href="#">
 		<img src="images/logo/logoo.png" width="60%" height="60%">
 		</a>
 
 		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars "style="color:#fff;"></i>
          </button>
   
 		
 		
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo03"><!--container for nav items-->
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+			<!--container for nav items-->
 		 
 	  <ul class="navbar-nav mt-2 mt-lg-0 link right" >
       
-	<!--exist all the time "live feed"-->
+	       <!--exist all the time "live feed"-->
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold active" href="#">Home</a>
+			 <a class="nav-link font-weight-bold active" href="index.html">Home</a>
          </li>
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold" href="#">Tickets</a>
+			 <a class="nav-link font-weight-bold" href="tickets.html">Tickets</a>
          </li>
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold" href="#">Hotels</a>
+					 <a class="nav-link font-weight-bold" href="hotels.html" data-toggle="dropdown">Hotels</a>
+					        <ul class="dropdown-menu drop-menu " role="menu" aria-labelledby="dropdownMenu">
+											<!--dropdown without sub menu-->
+											<li class="d-none d-lg-block ">
+												<a class="dropdown-item" href="#">ALL HOTELS</a>
+											</li>
+											<li class="d-none d-lg-block ">
+												<a class="dropdown-item" href="#">CAIRO</a>
+											</li>
+											<li class="d-none d-lg-block ">
+												<a class="dropdown-item" href="#">ALEX</a>
+											</li>
+											<li class="d-none d-lg-block ">
+												<a class="dropdown-item" href="#">SINAI</a>
+											</li>
+											<!--dropdown with sub menu-->
+					                    </ul>
+          </li>
+                                       
+			 
          </li>
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold" href="#">Tours</a>
+			 <a class="nav-link font-weight-bold" href="tours.html">Tours</a>
          </li>
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold" href="#">About Us</a>
+			 <a class="nav-link font-weight-bold" href="about.html">About Us</a>
          </li>
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold" href="#">Contact Us</a>
+			 <a class="nav-link font-weight-bold" href="contact.html">Contact Us</a>
          </li>
 		  
 		  
@@ -96,41 +162,62 @@
   </div>
 </nav>
 <!------------------------------------------------------------------------------->
+	<!--chat box-->
 <section class="chat-box container-fluid">
 	
-			<p >
+			<!--<p >
 				<i class="far fa-comments"></i>
 				we can help you 
 				<i class="fas fa-angle-up"></i>
-			</p>	
-        
+			</p>-->
+	<button class="open-button" onclick="openForm()">
+		<img src ="images/message.png" height="300px;">
+	</button>
+		<div class="form-popup" id="myForm">
+			  <form action="index.html" class="form-container">
+                    
+                   <small id="gmail" class="form-text text-muted">
+                       welcome to our page<br>
+					   please leave your question<br> 
+					   ,we will respond within minutes
+                   </small>
+				  <textarea type="text" placeholder="leave you message" name="textarea" required></textarea><br>
+
+				<button type="submit" class="btn">
+					<i class="fas fa-hand-pointer"></i></button>
+				<button type="button" class="btn cancel" onclick="closeForm()">
+					<i class="fas fa-times"></i></button>
+			  </form>
+</div>
 	
 </section>
 <!------------------------------------------------------------------------------->
-<footer>
-	<div class=" container">
+	<!--footer-->
+<footer class="container-fluid">
 	  <div class="row upper-footer">
-		  <div class="col-md"><img src="images/icons/icon1.png"><h6>hotels</h6></div>
-		  <div class="col-md"><img src="images/icons/icon2.png"><h6>hotels</h6></div>
-		  <div class="col-md"><img src="images/icons/icon1.png"><h6>hotels</h6></div>
+		  <div class="col-md wow bounceInUp animated"><img src="images/icons/icon1.png"><h6>hotels</h6>
+		  </div>
+		  <div class="col-md wow bounceInUp"><img src="images/icons/icon2.png"><h6>hotels</h6>
+		  </div>
+		  <div class="col-md wow bounceInUp"><img src="images/icons/icon1.png"><h6>hotels</h6>
+		  </div>
 		  
-	  </div>
 	</div>
-		<div class=" container-fluid lower-footer">
 
-	 <div class="row ">
+	 <div class="row lower-footer">
 		  <div class="col-md">copy right reversed &#64; 218 Al-fursan
-			                <br>Designed by Aml Saed
+			                <br>Designed by 
+			        <strong style="color:#d0010b">Aml Saed</strong>
 		   </div>
 		  <div class="col-md">
 		     <ul>
-			  <li><i class="fab fa-facebook-f"></i></li>
+			  <li><i class="fab fa-facebook-f fa-2x"></i></li>
 			  <li><i class="fab fa-twitter"></i></li>
 			  <li><i class="fas fa-mobile-alt"></i></li>
 			  <li><i class="fab fa-skype"></i></li>
 			  <li><i class="fab fa-google-plus-g"></i></li>
 			  <li><i class="fab fa-youtube"></i></li>
-			  <li class="contact-us">
+			  <li class="contact-us mt-2">
 				  <a href="#">Contact US </a>
 			 </li>
 			 </ul>
@@ -138,7 +225,7 @@
 		  </div>
 
 	
-			</div></div>
+			</div>
 	
 </footer>
 
@@ -148,6 +235,7 @@
 	
  
 <!------------------------------------------------------------------------------->
+<script src="js/wow.min.js"></script>       
 <script src="js/jquery-1.11.3.min.js"></script>       
 <script src="js/jquery.min.js"></script>       
 <script src="js/bootstrap.js"></script>    
