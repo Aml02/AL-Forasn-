@@ -143,6 +143,10 @@ chat box
   margin-top: 5px;
   right: 0;
   background-color: transparent;
+  -webkit-box-shadow: -1px 4px 115px -17px rgba(1,8,47,1);
+-moz-box-shadow: -1px 4px 115px -17px rgba(1,8,47,1);
+box-shadow: -1px 4px 115px -17px rgba(1,8,47,1);
+
 }
 
 /* The popup form - hidden by default */
@@ -157,6 +161,10 @@ chat box
   width:270px;
 	border-radius: 10px;
 	background-color: #fff;
+  -webkit-box-shadow: 0px 7px 70px 7px rgba(222,222,222,1);
+-moz-box-shadow: 0px 7px 70px 7px rgba(222,222,222,1);
+box-shadow: 0px 7px 70px 7px rgba(222,222,222,1);
+
 }
 /* Add styles to the form container */
 .form-container {
@@ -170,13 +178,14 @@ form small{	background-color: rgba(224, 282, 220, .7);
 	padding:20px;
 	 width:200px;
 	margin-left:35px !important;
+  margin-top:40px!important;
 }
 .form-container textarea{border: none;
 	                     border-radius: 10px;
 	                    background-color: rgba(222, 222, 222, .7);
 	                    padding: 20px;
 	                    width:200px;
-		                 margin-top:35px ;
+		                 margin-top:20px ;
 	                     margin-right:35px !important; 
 
 }
@@ -193,16 +202,29 @@ form small{	background-color: rgba(224, 282, 220, .7);
   position: fixed;
   border-radius: 50%;
 }
+ .form-popup .chat-title{
+  position: fixed;
+  background-color:#01082f;
+  color:#fff;
+  width: 350px;
+  height:40px; 
+ }
+ .chat-title a{text-decoration: none;
+                color: #8bef0b;
+                margin-left: 67%!important;
+                font-size: 8px;
 
+ }
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: transparent;
- color:#01082f;
+ color:#fff;
   right:233px;
-  top:134px;
+  top:145px;
 
 }
-
+.form-container .send{right:45px;
+                      top:390px;}
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;

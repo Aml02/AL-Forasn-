@@ -1,0 +1,311 @@
+
+/* Large Layout: 1200px. */
+@media only screen and (min-width: 1200px){
+    
+ 
+    
+}
+
+
+
+
+/* Medium screen  */ 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {  
+    
+  
+    
+    
+    
+    
+    
+    
+    
+  
+    
+
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {  
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px){}
+
+
+@media (min-width: 992px){  }
+
+
+
+@media only screen and (max-width: 991px){    
+
+       
+      
+    
+}
+	/*
+	================================================================
+	================================================================
+	*/
+	@media only screen and (min-width: 250px)and (max-width: 479px){
+     .top-header{margin-left:0px !important;
+                
+             }
+ .header-ul li{
+	         display:block;
+
+}
+.header-ul li a{text-decoration: none;
+	            color: #01082f;
+
+              }
+.contact{text-align: left;
+        
+
+          }
+.icon-content{display: inline-block;
+
+
+                }
+.header-ul li p i{color: #e60000;
+                  background-color:#01082f;
+	              border-radius: 50%;
+	              padding: 5px;
+	              font-size: 8px;
+}
+.flag1{display: none!important;}
+.sm-mail{display:inline-block!important}
+.sm-phone{display:inline-block!important}
+.lg-mail{display:none!important}
+.lg-phone{display:none!important}
+
+
+#exampleModal{background-color:rgba(1, 8, 47, .4) ;}
+.modal-content{background-color: rgba(1, 8, 47, .6) ;
+	           color:#fff;}
+.btn{margin-left:10px !important;
+	 background-color:#01082f;
+	 color:#fff }
+/*
+======================================================================
+========================================================================
+*/
+
+nav{background-image: url(../images/nav/smnav.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: auto;
+	width:100%;
+}
+nav a img{margin-left: 8% !important;
+          margin-top: -20%;}
+
+.right{margin-right: 0% !important;background-colo
+}
+.nav-button{margin-bottom: 60px;}
+
+.nav-item{padding-left: 40px;}
+
+.nav-item a{color: #fff;opacity: .8;}
+
+.nav-item a:hover{color: #fff;opacity: 1;}
+
+.active{color: #fff!important;
+	background-color: transparent;
+	padding: 13px;}
+
+.dropdown-menu{width:30px;color:#fff;background-color: rgba(1, 8, 47, .6) ;right:64px}
+
+
+.dropdown-item:hover{color:#01082f!important;
+	                 background-color: rgba(255, 255, 255, .6)}
+/*
+========================================================================
+chat box
+========================================================================
+*/
+.chat-box {position: relative;
+	      margin-top: 1%
+	      }
+
+	
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 5px;
+  right: 0;
+  background-color: transparent;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  margin-top: 3px;
+  right: 0px;
+  z-index: 9;
+  height:304px;
+  overflow-y: scroll;
+  width:270px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+form small{	background-color: rgba(224, 282, 220, .7);
+	border-radius: 10px;
+	padding:20px;
+	 width:200px;
+	margin-left:35px !important;
+}
+.form-container textarea{border: none;
+	                     border-radius: 10px;
+	                    background-color: rgba(222, 222, 222, .7);
+	                    padding: 20px;
+	                    width:200px;
+		                 margin-top:35px ;
+	                     margin-right:35px !important; 
+
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #01082f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  border-radius: 50%;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: transparent;
+ color:#01082f;
+  right:233px;
+  top:134px;
+
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+/*
+========================================================================
+footer
+========================================================================
+*/
+footer{background-image: url(../images/foooter.png) ;
+	   background-repeat: no-repeat;
+	   background-size: cover;
+	  background-position: center center;
+	margin-top:32%;
+	text-align: center;
+     color: #fff;
+	 position: absolute;
+	height: 100%;
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	top:100%!important;
+      }
+.upper-footer{padding-top: 20px;}
+.upper-footer img{border: 3px dashed #d0010b;
+                   border-radius: 50%;
+	              
+                  }
+.upper-footer h6{ color: #d0010b;
+                  font-size: 20px;
+	              font-weight: bold;
+	              font-family: cursive;
+                   }
+
+.lower-footer{background-color: #01082f;
+              width:100%!important;
+	          position: absolute;
+	          bottom: 0;
+  
+}
+.lower-footer ul li{display: inline-block;}	
+.lower-footer ul li i{border-radius: 50%;
+                      color:#333;
+	                  background-color: #fff;
+	                  font-size: 12px;
+	                  padding: 8px;
+	                  margin-top: 5px;
+                       }
+.contact-us a{
+	    border:1px solid #fff;
+	    border-radius: 20px;
+        padding: 0 5px;
+        text-decoration: none;
+	    color: #fff;
+        }
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
