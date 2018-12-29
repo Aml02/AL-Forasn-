@@ -13,8 +13,189 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {  
     
   
+  
+/*
+======================================================================
+========================================================================
+*/
+
+
+nav a img{margin-left: 82% !important;
+          margin-top: 17%;}
+
+.right{margin-right: 0% !important;}
+.nav-button{margin-bottom: 60px;}
+
+.nav-item{padding-left: 40px;}
+
+.nav-item a{color: #fff;opacity: .8;}
+
+.nav-item a:hover{color: #fff;opacity: 1;}
+
+.active{color: #fff!important;
+	background-color: transparent;
+	padding: 13px;}
+
+.dropdown-menu{width:30px;color:#fff;background-color: rgba(1, 8, 47, .6) ;right:64px}
+
+
+.dropdown-item:hover{color:#01082f!important;
+	                 background-color: rgba(255, 255, 255, .6)}
+/*
+========================================================================
+chat box
+========================================================================
+*/
+.chat-box {position: relative;
+	      margin-top: 1%
+	      }
+
+	
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 80px;
+  right: 0;
+  background-color: transparent;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  margin-top: 3px;
+  right: 0px;
+  z-index: 9;
+  height:304px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width:270px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+form small{	background-color: rgba(224, 282, 220, .7);
+	border-radius: 10px;
+	padding:20px;
+	 width:200px;
+	margin-left:35px !important;
+}
+.form-container textarea{border: none;
+	                     border-radius: 10px;
+	                    background-color: rgba(222, 222, 222, .7);
+	                    padding: 20px;
+	                    width:200px;
+		                 margin-top:15px ;
+	                     margin-right:35px !important; 
+
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #01082f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  border-radius: 50%;
+}
+ .form-popup .chat-title{
+  position: absolute !important;
+  background-color:#01082f;
+  color:#fff;
+  width: 350px;
+  height:40px; 
+ }
+ .chat-title a{text-decoration: none;
+                color: #8bef0b;
+                margin-left: 67%!important;
+                font-size: 8px;
+
+ }
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: transparent;
+ color:#fff;
+  right:233px;
+  top:0px!important;
+
+}
+.form-container .send{right:45px;
+                      top:237px!important;}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+/*
+========================================================================
+footer
+========================================================================
+*/
+footer{background-image: url(../images/foooter.png) ;
+	   background-repeat: no-repeat;
+	   background-size: cover;
+	  background-position: center center;
+	margin-top:-10%;
+	text-align: center;
+     color: #fff;
+	 position: absolute;
+	 min-height: 270px;
+	height: 35%;
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	top:100%!important;
+      }
+.upper-footer{padding-top: 20px;height: 100%}
+.upper-footer img{border: 3px dashed #d0010b;
+                   border-radius: 50%;
+	              
+                  }
+.upper-footer h6{ color: #d0010b;
+                  font-size: 20px;
+	              font-weight: bold;
+	              font-family: cursive;
+                   }
+
+.lower-footer{background-color: #01082f;
+              width:100%!important;
+	          position: absolute;
+	          bottom: 0;
+  
+}
+.lower-footer ul li{display: inline-block;}	
+.lower-footer ul li i{border-radius: 50%;
+                      color:#333;
+	                  background-color: #fff;
+	                  font-size: 12px;
+	                  padding: 8px;
+	                  margin-top: 5px;
+                       }
+.contact-us a{
+	    border:1px solid #fff;
+	    border-radius: 20px;
+        padding: 0 5px;
+        text-decoration: none;
+	    color: #fff;
+        }   
     
     
+     
     
     
     
@@ -30,56 +211,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {  
     
      
-    
-    
-    
-    
-    
-    
-    
-    
- 
-    
-}
-
-
-/* Mobile Layout: 320px. */
-@media only screen and (max-width: 767px) { 
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
-    
-}
-
-/* Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px){}
-
-
-@media (min-width: 992px){  }
-
-
-
-@media only screen and (max-width: 991px){    
-
-       
-      
-    
-}
-	/*
-	================================================================
-	================================================================
-	*/
-	@media only screen and (min-width: 250px)and (max-width: 479px){
-     .top-header{margin-left:0px !important;
+ .top-header{margin-left:0px !important;
                 
              }
  .header-ul li{
@@ -122,13 +254,13 @@
 ========================================================================
 */
 
-nav{background-image: url(../images/nav/smnav.png);
+nav{background-image: url(../images/nav/nav.png);
 	background-repeat: no-repeat;
 	background-size: auto;
 	height: auto;
 	width:100%;
 }
-nav a img{margin-left: 8% !important;
+nav a img{margin-left: 10% !important;
           margin-top: -20%;}
 
 .right{margin-right: 0% !important;background-colo
@@ -179,6 +311,7 @@ chat box
   z-index: 9;
   height:304px;
   overflow-y: scroll;
+  overflow-x: hidden;
   width:270px;
 	border-radius: 10px;
 	background-color: #fff;
@@ -201,7 +334,7 @@ form small{	background-color: rgba(224, 282, 220, .7);
 	                    background-color: rgba(222, 222, 222, .7);
 	                    padding: 20px;
 	                    width:200px;
-		                 margin-top:35px ;
+		                 margin-top:15px ;
 	                     margin-right:35px !important; 
 
 }
@@ -215,23 +348,38 @@ form small{	background-color: rgba(224, 282, 220, .7);
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: fixed;
+  position: absolute;
   border-radius: 50%;
 }
+ .form-popup .chat-title{
+  position: absolute !important;
+  background-color:#01082f;
+  color:#fff;
+  width: 350px;
+  height:40px; 
+ }
+ .chat-title a{text-decoration: none;
+                color: #8bef0b;
+                margin-left: 67%!important;
+                font-size: 8px;
 
+ }
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: transparent;
- color:#01082f;
+ color:#fff;
   right:233px;
-  top:134px;
+  top:0px!important;
 
 }
-
+.form-container .send{right:45px;
+                      top:237px!important;}
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
 
 
 /*
@@ -243,17 +391,519 @@ footer{background-image: url(../images/foooter.png) ;
 	   background-repeat: no-repeat;
 	   background-size: cover;
 	  background-position: center center;
-	margin-top:32%;
+	margin-top:22%;
 	text-align: center;
      color: #fff;
 	 position: absolute;
+	 min-height: 700px;
 	height: 100%;
 	width: 100%;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	top:100%!important;
       }
-.upper-footer{padding-top: 20px;}
+.upper-footer{padding-top: 20px;height: 100%}
+.upper-footer img{border: 3px dashed #d0010b;
+                   border-radius: 50%;
+	              
+                  }
+.upper-footer h6{ color: #d0010b;
+                  font-size: 20px;
+	              font-weight: bold;
+	              font-family: cursive;
+                   }
+
+.lower-footer{background-color: #01082f;
+              width:100%!important;
+	          position: absolute;
+	          bottom: 0;
+  
+}
+.lower-footer ul li{display: inline-block;}	
+.lower-footer ul li i{border-radius: 50%;
+                      color:#333;
+	                  background-color: #fff;
+	                  font-size: 12px;
+	                  padding: 8px;
+	                  margin-top: 5px;
+                       }
+.contact-us a{
+	    border:1px solid #fff;
+	    border-radius: 20px;
+        padding: 0 5px;
+        text-decoration: none;
+	    color: #fff;
+        }   
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+
+.top-header{margin-left:0px !important;
+                
+             }
+ .header-ul li{
+	         display:block;
+
+}
+.header-ul li a{text-decoration: none;
+	            color: #01082f;
+
+              }
+.contact{text-align: left;
+        
+
+          }
+.icon-content{display: inline-block;
+
+
+                }
+.header-ul li p i{color: #e60000;
+                  background-color:#01082f;
+	              border-radius: 50%;
+	              padding: 5px;
+	              font-size: 8px;
+}
+.flag1{display: none!important;}
+.sm-mail{display:inline-block!important}
+.sm-phone{display:inline-block!important}
+.lg-mail{display:none!important}
+.lg-phone{display:none!important}
+
+
+#exampleModal{background-color:rgba(1, 8, 47, .4) ;}
+.modal-content{background-color: rgba(1, 8, 47, .6) ;
+	           color:#fff;}
+.btn{margin-left:10px !important;
+	 background-color:#01082f;
+	 color:#fff }
+/*
+======================================================================
+========================================================================
+*/
+
+nav{background-image: url(../images/nav/nav.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: auto;
+	width:100%;
+}
+nav a img{margin-left: 30% !important;
+          margin-top: -20%;}
+
+.right{margin-right: 0% !important;background-colo
+}
+.nav-button{margin-bottom: 60px;}
+
+.nav-item{padding-left: 40px;}
+
+.nav-item a{color: #fff;opacity: .8;}
+
+.nav-item a:hover{color: #fff;opacity: 1;}
+
+.active{color: #fff!important;
+	background-color: transparent;
+	padding: 13px;}
+
+.dropdown-menu{width:30px;color:#fff;background-color: rgba(1, 8, 47, .6) ;right:64px}
+
+
+.dropdown-item:hover{color:#01082f!important;
+	                 background-color: rgba(255, 255, 255, .6)}
+/*
+========================================================================
+chat box
+========================================================================
+*/
+.chat-box {position: relative;
+	      margin-top: 1%
+	      }
+
+	
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 5px;
+  right: 0;
+  background-color: transparent;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  margin-top: 3px;
+  right: 0px;
+  z-index: 9;
+  height:304px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width:270px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+form small{	background-color: rgba(224, 282, 220, .7);
+	border-radius: 10px;
+	padding:20px;
+	 width:200px;
+	margin-left:35px !important;
+}
+.form-container textarea{border: none;
+	                     border-radius: 10px;
+	                    background-color: rgba(222, 222, 222, .7);
+	                    padding: 20px;
+	                    width:200px;
+		                 margin-top:15px ;
+	                     margin-right:35px !important; 
+
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #01082f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  border-radius: 50%;
+}
+ .form-popup .chat-title{
+  position: absolute !important;
+  background-color:#01082f;
+  color:#fff;
+  width: 350px;
+  height:40px; 
+ }
+ .chat-title a{text-decoration: none;
+                color: #8bef0b;
+                margin-left: 67%!important;
+                font-size: 8px;
+
+ }
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: transparent;
+ color:#fff;
+  right:233px;
+  top:0px!important;
+
+}
+.form-container .send{right:45px;
+                      top:237px!important;}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+/*
+========================================================================
+footer
+========================================================================
+*/
+footer{background-image: url(../images/foooter.png) ;
+	   background-repeat: no-repeat;
+	   background-size: cover;
+	  background-position: center center;
+	margin-top:22%;
+	text-align: center;
+     color: #fff;
+	 position: absolute;
+	 min-height: 700px;
+	height: 100%;
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	top:100%!important;
+      }
+.upper-footer{padding-top: 20px;height: 100%}
+.upper-footer img{border: 3px dashed #d0010b;
+                   border-radius: 50%;
+	              
+                  }
+.upper-footer h6{ color: #d0010b;
+                  font-size: 20px;
+	              font-weight: bold;
+	              font-family: cursive;
+                   }
+
+.lower-footer{background-color: #01082f;
+              width:100%!important;
+	          position: absolute;
+	          bottom: 0;
+  
+}
+.lower-footer ul li{display: inline-block;}	
+.lower-footer ul li i{border-radius: 50%;
+                      color:#333;
+	                  background-color: #fff;
+	                  font-size: 12px;
+	                  padding: 8px;
+	                  margin-top: 5px;
+                       }
+.contact-us a{
+	    border:1px solid #fff;
+	    border-radius: 20px;
+        padding: 0 5px;
+        text-decoration: none;
+	    color: #fff;
+        }
+
+
+
+
+
+
+}
+
+
+@media (min-width: 992px){  }
+
+
+
+@media only screen and (max-width: 991px){    
+
+       
+      
+    
+}
+	/*
+	================================================================
+	================================================================
+	*/
+	@media only screen and (min-width: 250px)and (max-width: 599px){
+     .top-header{margin-left:0px !important;
+                
+             }
+ .header-ul li{
+	         display:block;
+
+}
+.header-ul li a{text-decoration: none;
+	            color: #01082f;
+
+              }
+.contact{text-align: left;
+        
+
+          }
+.icon-content{display: inline-block;
+
+
+                }
+.header-ul li p i{color: #e60000;
+                  background-color:#01082f;
+	              border-radius: 50%;
+	              padding: 5px;
+	              font-size: 8px;
+}
+.flag1{display: none!important;}
+.sm-mail{display:inline-block!important}
+.sm-phone{display:inline-block!important}
+.lg-mail{display:none!important}
+.lg-phone{display:none!important}
+
+
+#exampleModal{background-color:rgba(1, 8, 47, .4) ;}
+.modal-content{background-color: rgba(1, 8, 47, .6) ;
+	           color:#fff;}
+.btn{margin-left:10px !important;
+	 background-color:#01082f;
+	 color:#fff }
+/*
+======================================================================
+========================================================================
+*/
+
+nav{background-image: url(../images/nav/smnav.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: auto;
+	width:100%;
+}
+nav a img{margin-left: -2% !important;
+          margin-top: -20%;}
+
+.right{margin-right: 0% !important;background-colo
+}
+.nav-button{margin-bottom: 65px;}
+
+.nav-item{padding-left: 40px;}
+
+.nav-item a{color: #fff;opacity: .8;}
+
+.nav-item a:hover{color: #fff;opacity: 1;}
+
+.active{color: #fff!important;
+	background-color: transparent;
+	padding: 13px;}
+
+.dropdown-menu{width:30px;color:#fff;background-color: rgba(1, 8, 47, .6) ;right:64px}
+
+
+.dropdown-item:hover{color:#01082f!important;
+	                 background-color: rgba(255, 255, 255, .6)}
+/*
+========================================================================
+chat box
+========================================================================
+*/
+.chat-box {position: relative;
+	      margin-top: 1%
+	      }
+
+	
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 5px;
+  right: 0;
+  background-color: transparent;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  margin-top: 3px;
+  right: 0px;
+  z-index: 9;
+  height:304px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width:270px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+form small{	background-color: rgba(224, 282, 220, .7);
+	border-radius: 10px;
+	padding:20px;
+	 width:200px;
+	margin-left:35px !important;
+}
+.form-container textarea{border: none;
+	                     border-radius: 10px;
+	                    background-color: rgba(222, 222, 222, .7);
+	                    padding: 20px;
+	                    width:200px;
+		                 margin-top:15px ;
+	                     margin-right:35px !important; 
+
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #01082f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  border-radius: 50%;
+}
+ .form-popup .chat-title{
+  position: absolute !important;
+  background-color:#01082f;
+  color:#fff;
+  width: 350px;
+  height:40px; 
+ }
+ .chat-title a{text-decoration: none;
+                color: #8bef0b;
+                margin-left: 67%!important;
+                font-size: 8px;
+
+ }
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: transparent;
+ color:#fff;
+  right:233px;
+  top:0px!important;
+
+}
+.form-container .send{right:45px;
+                      top:237px!important;}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+/*
+========================================================================
+footer
+========================================================================
+*/
+footer{background-image: url(../images/foooter.png) ;
+	   background-repeat: no-repeat;
+	   background-size: cover;
+	  background-position: center center;
+	margin-top:85%;
+	text-align: center;
+     color: #fff;
+	 position: relative;
+	 min-height: 530px;
+	height: 100%;
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	top:100%!important;
+      }
+.upper-footer{padding-top: 20px;height: 100%}
 .upper-footer img{border: 3px dashed #d0010b;
                    border-radius: 50%;
 	              

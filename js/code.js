@@ -37,39 +37,24 @@ function openForm() {
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-/***************************************************************************/
-  $('#featured').owlCarousel({
-  nav:true,
-  dots:false,
-  next:false,
+  document.getElementById("myForm").style.display = "none";}
+  /****************************************************************/
+  $('.owl-carousel').owlCarousel({
     loop:true,
     margin:0,
-  autoplay:true,
-autoplayTimeout:5000,
-autoplayHoverPause:true,
-    responsiveClass:true,
+    nav:true,
+    dots:false,
     responsive:{
         0:{
-            items:1,
-            nav:true
+            items:1
         },
         600:{
-            items:3,
-            nav:false
+            items:2
         },
         1000:{
-            items:7,
-            nav:true,
-            loop:false
+            items:3
         }
-    }
+    },    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+
 })
-  
-  
-  
-  
-  
-  
-  
-}
+

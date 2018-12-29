@@ -1,7 +1,4 @@
 
-
-
-
 /* header*/
 @charset "utf-8";
 /* CSS Document */
@@ -272,7 +269,10 @@ footer{background-image: url(../images/foooter.png) ;
 	                  font-size: 12px;
 	                  padding: 8px;
 	                  margin-top: 5px;
+
                        }
+
+ .lower-footer ul li i:hover{animation-name: slideInUp;}                      
 .contact-us a{
 	    border:1px solid #fff;
 	    border-radius: 20px;
@@ -280,6 +280,51 @@ footer{background-image: url(../images/foooter.png) ;
         text-decoration: none;
 	    color: #fff;
         }
+/*
+==========================================================================================
+hotels
+==========================================================================================
+*/
 
+.hotels{margin-top: 100px;}
+/*.owl-theme .owl-nav{background-color: transparent!important;}*/
+.hotel-container{background-color: #fff;font-family: cursive;}
+.owl-carousel, .owl-carousel .owl-item{background-color: rgba(1, 8, 47, .6)}
+.owl-theme .owl-nav [class*='owl-'] {background: rgba(1, 8, 47, .6)!important;}
+.owl-nav div {
+  position: absolute;
+  top: 45%;
+  background-color:rgba(1, 8, 47, .6);
+  /*
+  height: 20px;
+  width: 20px;
+  */
+}
 
+.owl-prev {
+  left: 35px;
+  /**
+   * margin-top: -10px;
+   * negative margin-top half the height so its centered.
+   */
+}
 
+.owl-next {
+  right: 35px;
+  /**
+   * margin-top: -10px;
+   * negative margin-top half the height so its centered.
+   */
+}
+/***********************************************************************************/
+.hotel-pic img{height: 150px!important;}
+/*********************************************************************************/
+.about-us .row .about-pic {padding: 0!important}
+.about-us .row .col{height: 400px !important;font-family: cursive;}
+.about-us img{height: 200px!important;width: 100%!important;margin: 0!important;}
+.about-us .row{-webkit-box-shadow: -1px 4px 106px 25px rgba(209,202,209,1);
+-moz-box-shadow: -1px 4px 106px 25px rgba(209,202,209,1);
+box-shadow: -1px 4px 106px 25px rgba(209,202,209,1);}
+/***************************************************************/
+.cont-us{width:500px;background-color: rgba(1, 8, 47, .6) ;}
+.cont-form{background-color: rgba(1, 8, 47, .6) ;color: #fff;padding: 20px;}

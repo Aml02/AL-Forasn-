@@ -9,6 +9,9 @@
 <link rel="icon" type="image/logo/logo" href="images/logo/logo.png" />
 <!--font awesom-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--owl carsoul-->
+<link rel="stylesheet" href="css/owl.carousel.min.css">    
+<link rel="stylesheet" href="css/owl.theme.default.css">    
 <!--bootstrap-->
 <link rel="stylesheet" href="css/bootstrap.min.css">    
 <link rel="stylesheet" href="css/bootstrap.css">    
@@ -20,7 +23,7 @@
 
 
 </head>
-<body onmouseleave="randombg()" id="random">
+<body >
 	<!--header-->
 	<div class="container-fluid top-header">
 	  <div class="row">
@@ -117,12 +120,12 @@
       
 	       <!--exist all the time "live feed"-->
 		 <li class="nav-item">
-			 <a class="nav-link font-weight-bold active" href="index.html">Home</a>
+			 <a class="nav-link font-weight-bold " href="index.html">Home</a>
          </li>
 		 <li class="nav-item">
 			 <a class="nav-link font-weight-bold" href="tickets.html">Tickets</a>
          </li>
-		 <li class="nav-item"><a class="nav-link font-weight-bold" href="hotels.html" >Hotels</a> 
+		 <li class="nav-item"><a class="nav-link font-weight-bold active" href="hotels.html" >Hotels</a> 
 		 </li> 
          
 		 <li class="nav-item">
@@ -144,40 +147,85 @@
 </nav>
 <!------------------------------------------------------------------------------->
 	<!--chat box-->
-<section class="chat-box container-fluid">
-	
-			<!--<p >
-				<i class="far fa-comments"></i>
-				we can help you 
-				<i class="fas fa-angle-up"></i>
-			</p>-->
-	<button class="open-button wow bounceInLeft" onclick="openForm()">
-		<img src ="images/message.png" height="300px;">
-	</button>
-		<div class="form-popup" id="myForm">
-			<div class="chat-title">
-			<a href="#" class="mt-4"><i class="fas fa-circle"></i></a></div>
-			  <form action="index.html" class="form-container">
-                    
-                   <small id="gmail" class="form-text text-muted">
-                       welcome to our page<br>
-					   please leave your question<br> 
-					   ,we will respond within minutes
-                   </small>
-				  <textarea type="text" placeholder="leave you message" name="textarea" required></textarea><br>
+<section class="hotels container">
+	<div class="row">
+		<div class="owl-carousel owl-theme">
+			    
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			    <div class="item ">
+			    	<div class="hotel-container text-center block-center">
+			    		<div class="hotel-titel py-1"><h4>hotel translvania</h4></div>
+			    		<div class="hotel-rate"></div>
+			    		<div class="hotel-pic mb-1 h-100"><img src="images/images.jpg"></div>
+			    		<div class="contact-butt py-1"><button class="btn btn-danger">Details</button></div>
+			    	</div>
+			    </div>
+			   
+			    
+			    
 
-				<button type="submit" class="btn send">
-					<i class="fas fa-hand-pointer"></i></button>
-				<button type="button" class="btn cancel" onclick="closeForm()">
-					<i class="fas fa-times"></i></button>
-			  </form>
-</div>
-	
+        </div>
+	</div>
 </section>
 <!------------------------------------------------------------------------------->
 	<!--footer-->
-<footer class="container-fluid">
-	  <div class="row upper-footer">
+<footer class="container-fluid" style="background-image: none">
+	 <!-- <div class="row upper-footer">
 		  <div class="col-md  wow bounceInUp "><img src="images/icons/icon1.png" class="img-fluid"><h6>hotels</h6>
 		  </div>
 		  <div class="col-md wow bounceInUp"><img src="images/icons/icon2.png" class="img-fluid"><h6>hotels</h6>
@@ -185,7 +233,7 @@
 		  <div class="col-md wow bounceInUp"><img src="images/icons/icon1.png" class="img-fluid"><h6>hotels</h6>
 		  </div>
 		  
-	</div>
+	</div>-->
 
 	 <div class="row lower-footer">
 		  <div class="col-md">copy right reversed &#64; 218 Al-fursan
@@ -222,9 +270,9 @@
 <script src="js/jquery-1.11.3.min.js"></script>       
 <script src="js/jquery.min.js"></script>       
 <script src="js/bootstrap.js"></script>    
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>    
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/popper.min.js"></script>
 <script src="js/code.js"></script>
 		
 </body>
