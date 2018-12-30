@@ -319,9 +319,10 @@ hotels
 /***********************************************************************************/
 .hotel-pic img{height: 150px!important;}
 /*********************************************************************************/
+.about-us{padding: 15px 100px 0 100px!important;}
 .about-us .row .about-pic {padding: 0!important}
-.about-us .row .col{height: 400px !important;font-family: cursive;}
-.about-us img{height: 200px!important;width: 100%!important;margin: 0!important;}
+.about-us .row .col-md{height: 350px !important;font-family: cursive;}
+.about-us img{height: 350px!important;width: 100%!important;margin: 0!important;}
 .about-us .row{-webkit-box-shadow: -1px 4px 106px 25px rgba(209,202,209,1);
 -moz-box-shadow: -1px 4px 106px 25px rgba(209,202,209,1);
 box-shadow: -1px 4px 106px 25px rgba(209,202,209,1);}
