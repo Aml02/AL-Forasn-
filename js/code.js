@@ -23,14 +23,15 @@ setInterval(clock, 1000);
  /*wow*/
 new WOW().init();
 /****************************************************************************/
+setInterval(
 function randombg(){
   var random= Math.floor(Math.random() * 3) + 0;
   var bigSize = ["url('images/background/BACKGROUND.png')",
                  "url('images/background/background2.png')",
                  "url('images/background/background3.png')"
                  ];
-  document.getElementById("random").style.backgroundImage=bigSize[random];
-}
+  document.body.style.backgroundImage=bigSize[random];
+},5000);
 /**************************************************************************/
 function openForm() {
   document.getElementById("myForm").style.display = "block";
